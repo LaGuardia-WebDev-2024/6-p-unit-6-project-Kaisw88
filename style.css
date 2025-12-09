@@ -20,21 +20,27 @@ html{
 #myCanvas {
   border-radius: 30px;
   border: 15px double rgb(0, 0, 0);
+  width: 500px;
+  height: 500px;
+  display: block;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }
 
 .container{
   display: flex;
   flex-wrap: wrap;
-  background-color: white;
+  background-color: #faf9f7;
   justify-content: space-around;
   align-items: flex-start;
+  gap: 24px;
+  padding: 32px;
   padding-bottom: 60px;
   border-radius: 30px;
 }
 
 .pic{
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
   object-fit: cover;
   border-radius: 30px;
   border: 15px double rgb(0, 0, 0);
@@ -50,4 +56,13 @@ h2{
 
 #end{
   text-align: right;
+}
+
+/* Added for Unit 6 Project: three CSS declarations */
+.canvas-caption{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #222222;
+  text-align: center;
+  margin-top: 8px;
 }
