@@ -11,29 +11,31 @@ void draw(){
   // faint background to create a subtle motion trail effect
   background(255, 255, 255, 20);
 
-  //Shape 1: Red Circle 
-  //Shape 1: Coral Circle 
-  // Using RGB: coral (warm accent)
-  fill(255, 127, 80);
-  stroke(50);
-  strokeWeight(2);
-  ellipse(120, 150, 150, 150);
+  // Pink rectangle from top of circle to below middle
+  fill(255, 192, 203); // pink
+  noStroke();
+  rect(width/2 - 40, height/2 - 150, 80, 170);
 
-  // Shape 2: Teal Square
-  // Using RGB: teal (cool accent)
-  fill(0, 150, 136);
-  stroke(20);
-  strokeWeight(6);
-  rect(260, 80, 150, 150, 12);
-
-  // (triangle and the small decorative circle removed)
-  // Shape 4: Central Purple Circle
-  // Placed in the middle of the right box (canvas)
-  fill(148, 0, 211); // deep purple
-  stroke(40);
-  strokeWeight(3);
-  // increase the central purple circle size for stronger emphasis
-  ellipse(width/2, height/2, 200, 200);
+  // Central Circle 
+  // Red quadrant
+  fill(204, 43, 43);
+  noStroke();
+  arc(width/2, height/2, 300, 300, PI, 3*PI/2, PIE);
+  
+  // Green quadrant
+  fill(65, 153, 55);
+  noStroke();
+  arc(width/2, height/2, 300, 300, 3*PI/2, TWO_PI, PIE);
+  
+  // Orange quadrant
+  fill(217, 189, 50);
+  noStroke();
+  arc(width/2, height/2, 300, 300, PI/2, PI, PIE);
+  
+  // Purple quadrant
+  fill(148, 0, 211);
+  noStroke();
+  arc(width/2, height/2, 300, 300, 0, PI/2, PIE);
 }
 
 //🟡Extra FUN Features Ms. Hall Added
