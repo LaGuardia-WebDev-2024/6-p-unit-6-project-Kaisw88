@@ -8,9 +8,7 @@ void setup() {
 
 //🟢Draw Procedure - Runs on Repeat
 void draw(){
-  // faint background to create a subtle motion trail effect
-  background(255, 255, 255, 20);
-
+  
   // Central Circle 
   // Red quadrant
   fill(204, 43, 43);
@@ -32,10 +30,20 @@ void draw(){
   noStroke();
   arc(width/2, height/2, 300, 300, 0, PI/2, PIE);
 
-  // Pink rectangle overlaying the circle (drawn last so it appears on top)
+  // nose
   fill(255, 38, 179); // pink
   noStroke();
   rect(width/2 - 40, height/2 - 150, 80, 170);
+
+  // eyes
+  fill(0, 102, 204); // blue
+  noStroke();
+  ellipse(width/2 - 90, height/2, 40, 40);
+  ellipse(width/2 + 90, height/2, 40, 40);
+  
+  fill(3, 0, 0);
+  noStroke();
+  ellipse(width/1 + 45, height/ 2, 20, 20 );
 }
 
 //🟡Extra FUN Features Ms. Hall Added
