@@ -9,7 +9,8 @@ void setup() {
 //🟢Draw Procedure - Runs on Repeat
 void draw(){
   
-  // Central Circle 
+  // Head 
+  strokeWeight(3);
   // Red quadrant
   fill(204, 43, 43);
   noStroke();
@@ -31,19 +32,19 @@ void draw(){
   arc(width/2, height/2, 300, 300, 0, PI/2, PIE);
 
   // nose
+  strokeWeight(2);
   fill(255, 38, 179); // pink
   noStroke();
   rect(width/2 - 40, height/2 - 150, 80, 170);
 
   // eyes
+  strokeWeight(4);
   fill(0, 102, 204); // blue
   noStroke();
   ellipse(width/2 - 90, height/2, 40, 40);
   ellipse(width/2 + 90, height/2, 40, 40);
   
-  fill(3, 0, 0);
-  noStroke();
-  ellipse(width/1 + 45, height/ 2, 20, 20 );
+ 
 }
 
 //🟡Extra FUN Features Ms. Hall Added

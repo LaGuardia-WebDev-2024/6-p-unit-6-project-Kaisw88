@@ -10,6 +10,8 @@ body {
     #B121B6 85%, /* Yellow starts at 75% */
     #DD133B 100% /* Yellow ends at 100% */
   );
+
+  background-image: url('https://images.photowall.com/products/54815/blue-sky-clouds.jpg?h=699&q=85');
 }
 
 html{
@@ -29,7 +31,7 @@ html{
 .container{
   display: flex;
   flex-wrap: wrap;
-  background-color: #faf9f7;
+  background-color: #ffffff;
   justify-content: space-around;
   align-items: flex-start;
   gap: 24px;
@@ -43,26 +45,30 @@ html{
   width: 500px;
   object-fit: cover;
   border-radius: 30px;
-  border: 15px double rgb(0, 0, 0);
+  border: 15px double rgb(255, 0, 0);
 }
 
 h2{
   color: black;
 }
 
+
+
 #start{
   text-align: left;
+  color: #E7541E;
 }
 
 #end{
   text-align: right;
+  color: #509844;
 }
 
 /* Added for Unit 6 Project: three CSS declarations */
 .canvas-caption{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  color: #222222;
+  color: #000000;
   text-align: center;
   margin-top: 8px;
 }
